@@ -1,0 +1,9 @@
+[Inputs]
+=to_shift[15:0]=
+=shift_bits[11:0]=
+[Outputs]
+=shifted[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel shift
+

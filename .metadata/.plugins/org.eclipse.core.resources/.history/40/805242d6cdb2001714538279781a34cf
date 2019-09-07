@@ -1,0 +1,283 @@
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+/**
+ * Converts a text file of assembly code into machine code
+ * @author donohoc1
+ *
+ */
+public class main {
+
+	public static void main(String[] args) {
+		//Swing components to choose file
+		JFileChooser fileChooser = new JFileChooser();
+		//Makes sure you can only select txt files(can be edited if we need other extensions)
+		FileFilter filter = new FileNameExtensionFilter("txt file", new String[] {"txt"});
+		fileChooser.setFileFilter(filter);
+		fileChooser.addChoosableFileFilter(filter);
+		//Makes it so it opens to the user's overall directory
+		fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+		int result = fileChooser.showOpenDialog(new JFrame());
+		if(result == JFileChooser.APPROVE_OPTION) {
+			//Code must go inside here so that
+			File selectedFile = fileChooser.getSelectedFile();
+			try {
+				String contents = new String(Files.readAllBytes(selectedFile.toPath()));
+				String[] lines = contents.split("\n");
+				StringBuilder output = new StringBuilder();
+				for(int i = 0; i < lines.length; i++) {
+					try {
+						output.append(translateLine(lines[i].trim(), i));
+						output.append("\n");
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+				System.out.println(output.toString());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	/**
+	 * Translates a single line from assembly to machine code
+	 * @param line String of the given line
+	 * @param lineNumber only used for more descriptive error messages
+	 * @return String of translated line(ones and zeros)
+	 * @throws Exception If at any point an input is invalid, say so and say the line its on.
+	 */
+	private static String translateLine(String line, int lineNumber) throws Exception{
+		String trimmed = line.trim();
+		if(trimmed.charAt(0) == '#' || trimmed.length() == 0) {
+			return "";
+		}
+		String op = trimmed.split(" ")[0].trim();
+		switch(op) {
+			case "add":
+			case "sub":
+			case "lmem":
+			case "smem":
+			case "slt":
+			case "or":
+			case "and":
+			case "jr":
+			case "jal":
+			case "lacc":
+			case "sacc":
+				return translateTypeOne(line, lineNumber);
+			case "sll":
+			case "lui":
+			case "ori":
+				return translateTypeTwo(line, lineNumber);
+			case "beq":
+			case "bne":
+				return translateTypeThree(line, lineNumber);
+			default:
+				return "";
+		}
+	}
+	
+	/**
+	 * Translates a type one instruction
+	 * @param line
+	 * @param lineNumber
+	 * @return machine code representation
+	 * @throws Exception
+	 */
+	private static String translateTypeOne(String line, int lineNumber) throws Exception{
+		String[] instruction = line.split(" ");
+		String op = instruction[0].trim();
+		String reg = instruction[1].trim();		
+		String imm = (instruction.length == 3)
+			? instruction[2].trim() 
+			: "00000000";
+		StringBuilder toReturn = new StringBuilder();
+		toReturn.append(convertOpCode(op, lineNumber));
+		toReturn.append(convertRegister(reg, lineNumber));
+		
+		//Converts the decimal immediate to binary
+		String immBinary = decimalToBinary(Integer.parseInt(imm));
+		//Not sure if this is right, need to sit down and think of counterexamples
+		while(immBinary.length() < 8) {
+			immBinary = "0" + immBinary;
+		}
+		toReturn.append(immBinary);
+		
+		return toReturn.toString();
+	}
+	
+	/**
+	 * Translates a type two instruction
+	 * @param line
+	 * @param lineNumber
+	 * @return machine code representation
+	 * @throws Exception
+	 */
+	private static String translateTypeTwo(String line, int lineNumber) throws Exception{
+		String[] instruction = line.split(" ");
+		String op = instruction[0];
+		String imm = instruction[1];
+		String unused = (instruction.length == 3)
+				? instruction[2]
+				: "0000";
+		StringBuilder toReturn = new StringBuilder();
+
+		toReturn.append(convertOpCode(op, lineNumber));
+		
+		String unusedBinary = decimalToBinary(Integer.parseInt(unused));
+		while(unusedBinary.length() < 4) {
+			unusedBinary = "0" + unusedBinary;
+		}
+		toReturn.append(unusedBinary);
+		
+		String immBinary = decimalToBinary(Integer.parseInt(imm));
+		while(unusedBinary.length() < 8) {
+			immBinary = "0" + immBinary;
+		}
+		toReturn.append(immBinary);
+		
+		return toReturn.toString();
+	}
+	
+	/**
+	 * Translates a type three instruction
+	 * @param line
+	 * @param lineNumber
+	 * @return machine code representation
+	 * @throws Exception
+	 */
+	private static String translateTypeThree(String line, int lineNumber) throws Exception {
+		String[] instruction = line.split(" ");
+		String op = instruction[0];
+		String reg = instruction[1];
+		String des = instruction[2];
+		String unused = (instruction.length == 4)
+				? instruction[3]
+				: "0000";
+		StringBuilder toReturn = new StringBuilder();
+		toReturn.append(convertOpCode(op, lineNumber));
+		toReturn.append(convertRegister(reg, lineNumber));
+		toReturn.append(convertRegister(des, lineNumber));
+		
+		String unusedBinary = decimalToBinary(Integer.parseInt(unused));
+		while(unusedBinary.length() < 4) {
+			unusedBinary = "0" + unusedBinary;
+		}
+		toReturn.append(unusedBinary);
+		
+		return toReturn.toString();
+	}
+	
+	/**
+	 * Converts a given op string to the corresponding binary representation
+	 * @param op
+	 * @param lineNumber
+	 * @return Binary representation of the opcode
+	 * @throws Exception if opcode doesn't exist
+	 */
+	private static String convertOpCode(String op, int lineNumber) throws Exception {
+		switch(op){
+			case "add":
+				return "0000";
+			case "sub":
+				return "0001";
+			case "lmem":
+				return "0010";
+			case "smem":
+				return "0011";
+			case "beq":
+				return "0100";
+			case "bne":
+				return "0101";
+			case "sll":
+				return "0110";
+			case "slt":
+				return "0111";
+			case "or":
+				return "1000";
+			case "and":
+				return "1001";
+			case "lui":
+				return "1010";
+			case "jr":
+				return "1011";
+			case "jal":
+				return "1100";
+			case "ori":
+				return "1101";
+			case "lacc":
+				return "1110";
+			case "sacc":
+				return "1111";
+			default:
+				throw new Exception("Invalid opcode line: " + lineNumber);
+		}
+	}
+	
+	/**
+	 * Converts a register string to the corresponding binary
+	 * @param reg 
+	 * @param lineNumber
+	 * @return binary translation
+	 * @throws Exception if reg is invalid
+	 */
+	private static String convertRegister(String reg, int lineNumber) throws Exception{
+		switch(reg){
+			case "$0":
+				return "0000";
+			case "$acc":
+				return "0001";
+			case "$a0":
+				return "0010";
+			case "$a1":
+				return "0011";
+			case "$a2":
+				return "0100";
+			case "$a3":
+				return "0101";
+			case "$v0":
+				return "0110";
+			case "$v1":
+				return "0111";
+			case "$t0":
+				return "1000";
+			case "$t1":
+				return "1001";
+			case "$s0":
+				return "1010";
+			case "$s1":
+				return "1011";
+			case "$ra":
+				return "1100";
+			case "$sp":
+				return "1101";
+			
+				//currently doesn't include at registers because those should only be used by the assembler for psuedoinstructions
+				
+			default:
+				throw new Exception("Invalid register in line: " + lineNumber);	
+		}
+	}
+	
+	/**
+	 * Converts a decimal integer to binary string
+	 * @param decimal
+	 * @return binary String
+	 */
+	private static String decimalToBinary(int decimal) {
+		StringBuilder toReturn = new StringBuilder();
+		while(decimal > 0) {
+			toReturn.append("" + (decimal % 2));
+			decimal /= 2;
+			System.out.println("Looping in decToBin");
+		}
+		return toReturn.toString();		
+	}
+}

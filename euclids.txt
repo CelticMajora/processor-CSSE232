@@ -1,0 +1,55 @@
+relPrime:
+li $s0 2
+looop:
+lacc $s0
+sacc $a1
+addi $sp $sp 3
+lacc $ra
+smem $sp 0
+lacc $a0
+smem $sp -1
+lacc $s0
+smem $sp -2
+jalp gcd
+lmem $sp 0
+sacc $ra
+lmem $sp -1
+sacc $a0
+lmem $sp -2
+sacc $s0
+addi $sp $sp -3
+li $acc 1
+beqp $v0 $acc output
+add $s0
+sacc $s0
+j looop
+output:
+lacc $s0
+sacc $v0
+jr $ra
+gcd: 
+beqp $a0 $0 bcase
+loop:
+beqp $a1 $0 acase
+lacc $a0
+slt $a1
+sacc $t0
+li $acc 1
+beqp $t0 $acc asub
+lacc $a1
+sub $a0 1
+sacc $a1
+j loop
+bcase:
+lacc $a1
+sacc $v0
+jr $ra
+asub:
+lacc $a0
+sub $a1 1
+sacc $a0
+j loop
+acase:
+lacc $a0
+sacc $v0
+jr $ra

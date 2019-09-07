@@ -1,0 +1,3 @@
+MODULE comparator
+	SUBMODULE constant1
+		INSTANCE XLXI_8

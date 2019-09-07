@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/donohoc1/Documents/201810/CSSE232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/clock.v -lang verilog -prj DatapathProject -o clock.spl -module clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp -w clock.spl C:/Users/donohoc1/Documents/201810/CSSE232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/clock.sym 

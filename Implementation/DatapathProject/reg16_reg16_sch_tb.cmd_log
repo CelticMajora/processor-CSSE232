@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/test_reg16.v} -lang verilog -prj M4Implemention -o reg16_reg16_sch_tb.spl -module reg16_reg16_sch_tb -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp reg16_reg16_sch_tb.spl {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/reg16_reg16_sch_tb.sym} 

@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : buf4_drc.vf
+// /___/   /\     Timestamp : 10/30/2017 19:16:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3adsp -verilog buf4_drc.vf -w "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/buf4.sch"
+//Design Name: buf4
+//Device: spartan3adsp
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module buf4(I, 
+            O);
+
+    input [3:0] I;
+   output [3:0] O;
+   
+   
+   BUF  XLXI_1 (.I(I[0]), 
+               .O(O[0]));
+   BUF  XLXI_28 (.I(I[1]), 
+                .O(O[1]));
+   BUF  XLXI_29 (.I(I[2]), 
+                .O(O[2]));
+   BUF  XLXI_30 (.I(I[3]), 
+                .O(O[3]));
+endmodule

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3adsp -refsym buf16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/buf16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/buf16.sym} 
+sch2sym -intstyle ise -family spartan3adsp -refsym buf16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/buf16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/buf16.sym} 

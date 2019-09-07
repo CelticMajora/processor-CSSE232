@@ -1,0 +1,162 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	private String translateLine(String line, int lineNumber){
+		
+	}
+	
+	private String translateTypeOne(String line, int lineNumber) throws Exception{
+		String[] instruction = line.split(" ");
+		String op = instruction[0];
+		String reg = instruction[1];		
+		String imm = (instruction.length == 3)
+			? instruction[2] 
+			: "00000000";
+		StringBuilder toReturn = new StringBuilder();
+		toReturn.append(convertOpCode(op, lineNumber));
+		toReturn.append(convertRegister(reg, lineNumber));
+		
+		//Converts the decimal immediate to binary
+		String immBinary = decimalToBinary(Integer.parseInt(imm));
+		//Not sure if this is right, need to sit down and think of counterexamples
+		while(immBinary.length() < 8) {
+			immBinary = "0" + immBinary;
+		}
+		toReturn.append(immBinary);
+		
+		return toReturn.toString();
+	}
+	
+	private String translateTypeTwo(String line, int lineNumber) throws Exception{
+		String[] instruction = line.split(" ");
+		String op = instruction[0];
+		String imm = instruction[1];
+		String unused = (instruction.length == 3)
+				? instruction[2]
+				: "0000";
+		StringBuilder toReturn = new StringBuilder();
+
+		toReturn.append(convertOpCode(op, lineNumber));
+		
+		String unusedBinary = decimalToBinary(Integer.parseInt(unused));
+		while(unusedBinary.length() < 4) {
+			unusedBinary = "0" + unusedBinary;
+		}
+		toReturn.append(unusedBinary);
+		
+		String immBinary = decimalToBinary(Integer.parseInt(imm));
+		while(unusedBinary.length() < 8) {
+			immBinary = "0" + immBinary;
+		}
+		toReturn.append(immBinary);
+		
+		return toReturn.toString();
+	}
+	
+	/**
+	 * Converts a given op string to the corresponding binary representation
+	 * @param op
+	 * @param lineNumber
+	 * @return Binary representation of the opcode
+	 * @throws Exception if opcode doesn't exist
+	 */
+	private String convertOpCode(String op, int lineNumber) throws Exception {
+		switch(op){
+			case "add":
+				return "0000";
+			case "sub":
+				return "0001";
+			case "lmem":
+				return "0010";
+			case "smem":
+				return "0011";
+			case "beq":
+				return "0100";
+			case "bne":
+				return "0101";
+			case "sll":
+				return "0110";
+			case "slt":
+				return "0111";
+			case "or":
+				return "1000";
+			case "and":
+				return "1001";
+			case "lui":
+				return "1010";
+			case "jr":
+				return "1011";
+			case "jal":
+				return "1100";
+			case "ori":
+				return "1101";
+			case "lacc":
+				return "1110";
+			case "sacc":
+				return "1111";
+			default:
+				throw new Exception("Invalid opcode line: " + lineNumber);
+		}
+	}
+	
+	/**
+	 * Converts a register string to the corresponding binary
+	 * @param reg 
+	 * @param lineNumber
+	 * @return binary translation
+	 * @throws Exception if reg is invalid
+	 */
+	private String convertRegister(String reg, int lineNumber) throws Exception{
+		switch(reg){
+			case "$0":
+				return "0000";
+			case "$acc":
+				return "0001";
+			case "$a0":
+				return "0010";
+			case "$a1":
+				return "0011";
+			case "$a2":
+				return "0100";
+			case "$a3":
+				return "0101";
+			case "$v0":
+				return "0110";
+			case "$v1":
+				return "0111";
+			case "$t0":
+				return "1000";
+			case "$t1":
+				return "1001";
+			case "$s0":
+				return "1010";
+			case "$s1":
+				return "1011";
+			case "$ra":
+				return "1100";
+			case "$sp":
+				return "1101";
+			default:
+				throw new Exception("Invalid register in line: " + lineNumber);	
+		}
+	}
+	
+	/**
+	 * Converts a decimal integer to binary string
+	 * @param decimal
+	 * @return binary String
+	 */
+	private String decimalToBinary(int decimal) {
+		StringBuilder toReturn = new StringBuilder();
+		while(decimal > 0) {
+			toReturn.append("" + (decimal % 2));
+			decimal /= 2;
+		}
+		return toReturn.toString();		
+	}
+}

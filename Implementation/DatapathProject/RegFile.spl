@@ -1,0 +1,15 @@
+[Inputs]
+RegWrite
+clock
+=Read1[3:0]=
+=Read2[3:0]=
+=WriteReg[3:0]=
+=WriteData[15:0]=
+[Outputs]
+=Data1[15:0]=
+=Data2[15:0]=
+=Data3[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel RegFile
+

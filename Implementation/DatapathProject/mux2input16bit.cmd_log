@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/mux2input16bit.xst" -ofn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/mux2input16bit.syr" 
+sch2sym -intstyle ise -family spartan3adsp -refsym mux2input16bit {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/mux2input16bit.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/mux2input16bit.sym} 

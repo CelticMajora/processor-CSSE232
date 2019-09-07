@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bit4zebit16.vf
+// /___/   /\     Timestamp : 10/25/2017 16:28:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3adsp -verilog "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit4zebit16.vf" -w "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit4zebit16.sch"
+//Design Name: bit4zebit16
+//Device: spartan3adsp
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bit4zebit16(I, 
+                   O);
+
+    input [3:0] I;
+   output [15:0] O;
+   
+   wire G;
+   
+   BUF  XLXI_1 (.I(I[0]), 
+               .O(O[0]));
+   GND  XLXI_2 (.G(G));
+   BUF  XLXI_28 (.I(I[1]), 
+                .O(O[1]));
+   BUF  XLXI_29 (.I(I[2]), 
+                .O(O[2]));
+   BUF  XLXI_30 (.I(I[3]), 
+                .O(O[3]));
+   BUF  XLXI_31 (.I(G), 
+                .O(O[4]));
+   BUF  XLXI_32 (.I(G), 
+                .O(O[5]));
+   BUF  XLXI_33 (.I(G), 
+                .O(O[6]));
+   BUF  XLXI_34 (.I(G), 
+                .O(O[7]));
+   BUF  XLXI_35 (.I(G), 
+                .O(O[8]));
+   BUF  XLXI_36 (.I(G), 
+                .O(O[9]));
+   BUF  XLXI_37 (.I(G), 
+                .O(O[10]));
+   BUF  XLXI_38 (.I(G), 
+                .O(O[11]));
+   BUF  XLXI_39 (.I(G), 
+                .O(O[12]));
+   BUF  XLXI_40 (.I(G), 
+                .O(O[13]));
+   BUF  XLXI_41 (.I(G), 
+                .O(O[14]));
+   BUF  XLXI_42 (.I(G), 
+                .O(O[15]));
+endmodule

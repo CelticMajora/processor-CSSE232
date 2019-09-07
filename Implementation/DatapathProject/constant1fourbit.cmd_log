@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant1fourbit.xst" -ofn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant1fourbit.syr" 
+sch2sym -intstyle ise -family spartan3adsp -refsym constant1fourbit {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant1fourbit.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant1fourbit.sym} 

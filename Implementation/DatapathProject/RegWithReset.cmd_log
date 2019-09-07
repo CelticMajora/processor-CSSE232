@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3adsp -w -refsym RegWithReset {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/RegWithReset.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/RegWithReset.sym} 

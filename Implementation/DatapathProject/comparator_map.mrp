@@ -1,0 +1,209 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'comparator'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3sd1800a-fg676-4 -cm area -ir off -pr
+off -c 100 -o comparator_map.ncd comparator.ngd comparator.pcf 
+Target Device  : xc3sd1800a
+Target Package : fg676
+Target Speed   : -4
+Mapper Version : spartan3adsp -- $Revision: 1.55 $
+Mapped Date    : Wed Oct 25 16:23:55 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:                41 out of  33,280    1%
+Logic Distribution:
+  Number of occupied Slices:             36 out of  16,640    1%
+    Number of Slices containing only related logic:      36 out of      36 100%
+    Number of Slices containing unrelated logic:          0 out of      36   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          55 out of  33,280    1%
+    Number used as logic:                41
+    Number used as a route-thru:         14
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 34 out of     519    6%
+
+Average Fanout of Non-Clock Nets:                1.00
+
+Peak Memory Usage:  514 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   5 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@ise.csse.rose-hulman.edu'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3sd1800a' is a WebPack part.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  19 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+VCC 		XLXI_13/XST_VCC
+VCC 		XLXI_8/XLXI_1
+GND 		XLXI_8/XLXI_2
+BUF 		XLXI_8/XLXI_3/XLXI_1
+BUF 		XLXI_8/XLXI_3/XLXI_28
+BUF 		XLXI_8/XLXI_3/XLXI_29
+BUF 		XLXI_8/XLXI_3/XLXI_30
+BUF 		XLXI_8/XLXI_3/XLXI_31
+BUF 		XLXI_8/XLXI_3/XLXI_32
+BUF 		XLXI_8/XLXI_3/XLXI_33
+BUF 		XLXI_8/XLXI_3/XLXI_34
+BUF 		XLXI_8/XLXI_3/XLXI_35
+BUF 		XLXI_8/XLXI_3/XLXI_36
+BUF 		XLXI_8/XLXI_3/XLXI_37
+BUF 		XLXI_8/XLXI_3/XLXI_38
+BUF 		XLXI_8/XLXI_3/XLXI_39
+BUF 		XLXI_8/XLXI_3/XLXI_40
+BUF 		XLXI_8/XLXI_3/XLXI_41
+BUF 		XLXI_8/XLXI_3/XLXI_42
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |             | Strength | Rate    |              |          | Delay    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| A<0>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<1>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<2>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<3>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<4>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<5>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<6>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<7>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<8>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<9>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<10>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<11>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<12>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<13>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<14>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| A<15>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<0>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<1>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<2>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<3>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<4>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<5>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<6>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<7>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<8>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<9>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<10>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<11>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<12>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<13>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<14>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| B<15>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| BranchDecide                       | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| EorNE                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

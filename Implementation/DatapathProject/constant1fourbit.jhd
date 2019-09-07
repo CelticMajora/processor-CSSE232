@@ -1,0 +1,3 @@
+MODULE constant1fourbit
+	SUBMODULE buf4
+		INSTANCE XLXI_4

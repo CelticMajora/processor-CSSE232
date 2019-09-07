@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="DatapathProject" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Datapath C:|Users|Administrator|Documents|Classes|SO1|CSSE232|Project|Implementation|DatapathProject|Datapath.sch/XLXI_100 - constant8twelvebit</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|Administrator|Documents|Classes|SO1|CSSE232|Project|Implementation|DatapathProject|Datapath.sch/XLXI_25 - constant1</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|Administrator|Documents|Classes|SO1|CSSE232|Project|Implementation|DatapathProject|Datapath.sch/XLXI_96 - comparator</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_100 - constant8twelvebit</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_25 - constant1</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_96 - comparator</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_100 - constant8twelvebit</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_25 - constant1</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_96 - comparator</ClosedNode>
+         <ClosedNode>/IR_MemPC C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|IR_MemPC.sch</ClosedNode>
+         <ClosedNode>/PCReg C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|PCReg.sch</ClosedNode>
+         <ClosedNode>/RegALU C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|RegALU.sch</ClosedNode>
+         <ClosedNode>/RegandOtherCalc C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|RegandOtherCalc.sch</ClosedNode>
+         <ClosedNode>/beq C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|beq.sch</ClosedNode>
+         <ClosedNode>/beq C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|beq.sch</ClosedNode>
+         <ClosedNode>/constant12fourbit C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|constant12fourbit.sch</ClosedNode>
+         <ClosedNode>/constant1fourbit C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|constant1fourbit.sch</ClosedNode>
+         <ClosedNode>/jal C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|jal.sch</ClosedNode>
+         <ClosedNode>/jr C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|jr.sch</ClosedNode>
+         <ClosedNode>/lacc C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|lacc.sch</ClosedNode>
+         <ClosedNode>/lacc C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|lacc.sch</ClosedNode>
+         <ClosedNode>/lui C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|lui.sch</ClosedNode>
+         <ClosedNode>/memtoreg C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|memtoreg.sch</ClosedNode>
+         <ClosedNode>/mux2input16bit_mux2input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux2input16bit.v</ClosedNode>
+         <ClosedNode>/mux3input16bit_mux3input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux3input16bit.v</ClosedNode>
+         <ClosedNode>/mux3input4bit_mux3input4bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux3input4bit.v</ClosedNode>
+         <ClosedNode>/mux6input16bit_mux6input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux6input16bit.v</ClosedNode>
+         <ClosedNode>/mux6input16bit_mux6input16bit_sch_tb C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux6input16bit.v</ClosedNode>
+         <ClosedNode>/pc_add_1 C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|pc_add_1.sch</ClosedNode>
+         <ClosedNode>/pc_add_1 C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|pc_add_1.sch</ClosedNode>
+         <ClosedNode>/realmemtoreg C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|realmemtoreg.sch</ClosedNode>
+         <ClosedNode>/reg16_reg16_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_reg16.v</ClosedNode>
+         <ClosedNode>/reg16_reg16_sch_tb C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_reg16.v</ClosedNode>
+         <ClosedNode>/sacc C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|sacc.sch</ClosedNode>
+         <ClosedNode>/sacc C:|Users|yangh4|Desktop|RHIT|2017 01|CSSE 232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|sacc.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000195000000020000000000000000000000000200000064ffffffff000000810000000300000002000001950000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Datapath (C:/Users/donohoc1/Documents/201810/CSSE232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/Datapath.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000009200000001000000000000004a0000000100000000000000660000000100000000000001900000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>alu.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000b8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>bit4zebit16.sch</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff000000000000000200000106000000c301000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_100 - constant8twelvebit</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_25 - constant1</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|Datapath.sch/XLXI_96 - comparator</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|datapath_tb.v/UUT - Datapath/XLXI_100 - constant8twelvebit</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|datapath_tb.v/UUT - Datapath/XLXI_25 - constant1</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|datapath_tb.v/UUT - Datapath/XLXI_96 - comparator</ClosedNode>
+         <ClosedNode>/IR_MemPC_IR_MemPC_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|IR_MemPC_tb.v</ClosedNode>
+         <ClosedNode>/PCReg_PCReg_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|PCReg_tb.v</ClosedNode>
+         <ClosedNode>/RegALU C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|RegALU.sch</ClosedNode>
+         <ClosedNode>/RegFile_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|RegFile_tb.v</ClosedNode>
+         <ClosedNode>/RegandOtherCalc C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|RegandOtherCalc.sch</ClosedNode>
+         <ClosedNode>/alu_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|alu_tb.v</ClosedNode>
+         <ClosedNode>/beq_beq_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|beq_tb.v</ClosedNode>
+         <ClosedNode>/bit4zebit16_bit4zebit16_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|bit4zebit16_tb.v</ClosedNode>
+         <ClosedNode>/bit8sebit16_bit8sebit16_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|bit8sebit16_tb.v</ClosedNode>
+         <ClosedNode>/bit8zebit16_bit8zebit16_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|bit8zebit16_tb.v</ClosedNode>
+         <ClosedNode>/comparator_comparator_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|comparator_tb.v</ClosedNode>
+         <ClosedNode>/constant12fourbit_constant12fourbit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|constant12fourbit_tb.v</ClosedNode>
+         <ClosedNode>/constant1_constant1_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|constant1_tb.v</ClosedNode>
+         <ClosedNode>/constant1fourbit_constant1fourbit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|constant1fourbit_tb.v</ClosedNode>
+         <ClosedNode>/constant8twelvebit_constant8twelvebit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|constant8twelvebit_tb.v</ClosedNode>
+         <ClosedNode>/jal C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|jal.sch</ClosedNode>
+         <ClosedNode>/jr C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|jr.sch</ClosedNode>
+         <ClosedNode>/lacc C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|lacc.sch</ClosedNode>
+         <ClosedNode>/lui C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|lui.sch</ClosedNode>
+         <ClosedNode>/lui_lui_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|lui_tb.v</ClosedNode>
+         <ClosedNode>/memory_test C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|memory_test.v</ClosedNode>
+         <ClosedNode>/memtoreg_memtoreg_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|memtoreg_tb.v</ClosedNode>
+         <ClosedNode>/mux2input16bit_mux2input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux2input16bit.v</ClosedNode>
+         <ClosedNode>/mux3input16bit_mux3input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux3input16bit.v</ClosedNode>
+         <ClosedNode>/mux3input4bit_mux3input4bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux3input4bit.v</ClosedNode>
+         <ClosedNode>/mux4input16bit_mux4input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|mux4input16bit_tb.v</ClosedNode>
+         <ClosedNode>/mux6input16bit_mux6input16bit_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_mux6input16bit.v</ClosedNode>
+         <ClosedNode>/pc_add_1_pc_add_1_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|pc_add_1_tb.v</ClosedNode>
+         <ClosedNode>/reg16_reg16_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|test_reg16.v</ClosedNode>
+         <ClosedNode>/sacc C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|sacc.sch</ClosedNode>
+         <ClosedNode>/sacc_sacc_sch_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|sacc_tb.v</ClosedNode>
+         <ClosedNode>/shift_tb C:|Users|donohoc1|Documents|201810|CSSE232|2D-donohoc1-jenninbt-wangy16-xiek-yangh4|Implementation|DatapathProject|shift_tb.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Datapath_Datapath_sch_tb (C:/Users/donohoc1/Documents/201810/CSSE232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/datapath_tb.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c0000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c00000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Datapath_Datapath_sch_tb (C:/Users/donohoc1/Documents/201810/CSSE232/2D-donohoc1-jenninbt-wangy16-xiek-yangh4/Implementation/DatapathProject/datapath_tb.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

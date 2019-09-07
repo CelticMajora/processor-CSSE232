@@ -1,0 +1,6 @@
+vhdtdtfi -lib work {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/RegFile.v} -lang verilog -prj M4Implemention -o RegFile.spl -module RegFile -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp RegFile.spl {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/RegFile.sym} 
+vhdtdtfi -lib work {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/RegFile.v} -lang verilog -prj M4Implemention -o RegFile.spl -module RegFile -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp RegFile.spl {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/RegFile.sym} 
+vhdtdtfi -lib work {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/RegFile.v} -lang verilog -prj M4Implemention -o RegFile.spl -module RegFile -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp RegFile.spl {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/RegFile.sym} 

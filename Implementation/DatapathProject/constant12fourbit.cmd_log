@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant12fourbit.xst" -ofn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant12fourbit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3sd1800a-fg676-4 "constant12fourbit.ngc" constant12fourbit.ngd  
+map -intstyle ise -p xc3sd1800a-fg676-4 -cm area -ir off -pr off -c 100 -o constant12fourbit_map.ncd constant12fourbit.ngd constant12fourbit.pcf 
+par -w -intstyle ise -ol high -t 1 constant12fourbit_map.ncd constant12fourbit.ncd constant12fourbit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml constant12fourbit.twx constant12fourbit.ncd -o constant12fourbit.twr constant12fourbit.pcf 
+sch2sym -intstyle ise -family spartan3adsp -refsym constant12fourbit {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant12fourbit.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant12fourbit.sym} 
+sch2sym -intstyle ise -family spartan3adsp -refsym constant12fourbit {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant12fourbit.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/constant12fourbit.sym} 

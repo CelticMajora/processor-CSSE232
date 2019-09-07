@@ -1,0 +1,3 @@
+MODULE constant8twelvebit
+	SUBMODULE buf12
+		INSTANCE XLXI_4

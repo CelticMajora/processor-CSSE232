@@ -1,0 +1,3 @@
+verilog work "buf16.vf"
+verilog work "constant1.vf"
+verilog work "comparator.vf"

@@ -1,0 +1,7 @@
+verilog work "buf16.vf"
+verilog work "constant1.vf"
+verilog work "reg16.vf"
+verilog work "comparator.vf"
+verilog work "beq.vf"
+verilog work "beq_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,23 @@
+test:
+li $t0 6
+li $t1 8
+addi $sp $sp 12
+lacc $ra
+smem $sp 0
+lacc $t1
+smem $sp -4
+lacc $t0
+smem $sp -8
+jalp jumper
+lmem $sp 0
+sacc $ra
+lmem $sp -4
+sacc $t1
+lmem $sp -8
+sacc $t0
+jr $ra
+jumper:
+lacc $t0
+add $t1
+sacc $t0
+jr $ra

@@ -1,0 +1,3 @@
+verilog work "mux3input16bit.vf"
+verilog work "test_mux3input16bit.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

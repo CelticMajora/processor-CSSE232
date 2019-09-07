@@ -1,0 +1,3 @@
+MODULE constant1
+	SUBMODULE buf16
+		INSTANCE XLXI_4

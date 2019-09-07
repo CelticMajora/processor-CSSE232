@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.xst" -ofn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.syr" 
+sch2sym -intstyle ise -family spartan3adsp -refsym bit8zebit16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sym} 
+sch2sym -intstyle ise -family spartan3adsp -refsym bit8zebit16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sym} 
+sch2hdl -intstyle ise -family spartan3adsp -verilog bit8zebit16_drc.vf -w {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sch} 
+sch2sym -intstyle ise -family spartan3adsp -refsym bit8zebit16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sym} 
+sch2sym -intstyle ise -family spartan3adsp -refsym bit8zebit16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8zebit16.sym} 

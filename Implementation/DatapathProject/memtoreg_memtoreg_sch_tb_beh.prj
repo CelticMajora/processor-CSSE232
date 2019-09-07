@@ -1,0 +1,7 @@
+verilog work "reg16.vf"
+verilog work "ipcore_dir/blockmemory16kx1.v"
+verilog work "bit8sebit16.vf"
+verilog work "alu.v"
+verilog work "memtoreg.vf"
+verilog work "memtoreg_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

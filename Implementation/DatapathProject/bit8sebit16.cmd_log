@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8sebit16.xst" -ofn "C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8sebit16.syr" 
+sch2sym -intstyle ise -family spartan3adsp -refsym bit8sebit16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8sebit16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8sebit16.sym} 
+sch2sym -intstyle ise -family spartan3adsp -refsym bit8sebit16 {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8sebit16.sch} {C:/Users/yangh4/Desktop/RHIT/2017 01/CSSE 232/M4Implemention/bit8sebit16.sym} 
