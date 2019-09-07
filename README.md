@@ -1,5 +1,5 @@
 # processor-CSSE232
-Term Project for CSSE232 - Fall 2017-2018
+CSSE232 Term Project - Fall 2017-2018
 
 My team-mates for this project were Brian Jennings, Anderson Yang, Kevin Wang, and Kaiyu Xie
 
